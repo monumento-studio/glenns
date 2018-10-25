@@ -1,0 +1,133 @@
+.text-center{
+    text-align: center;
+  }
+  
+  .fullheight, #recipe, #contact{
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .flex{
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flex-wrap{
+    flex-wrap: wrap;
+  }
+  
+  .flex-column{
+    flex-direction: column;
+  }
+  
+  .show-for-small{
+    display: none;
+  }
+  
+  .hide-for-small{
+    display: block;
+  }
+  
+  .modulo{
+    box-sizing: border-box;
+  }
+  
+  .modulo-inner, .modulo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .modulo-inner{
+    z-index: -1;
+  }
+  
+  .row{
+    width: 100%;
+    max-width: 78.75rem;
+    margin: 0 auto;
+  }
+  
+  .row::before, .row::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .large-20{
+    width: 20%;
+    float: left;
+  }
+  
+  .large-33{
+    width: 33.33%;
+    float: left;
+  }
+  
+  .large-50{
+    width: 50%;
+    float: left;
+  }
+  
+  .large-66{
+    width: 66.66%;
+    float: left;
+  }
+  
+  .large-75{
+    width: 75%;
+  }
+  
+  .large-80{
+    width: 80%;
+    float: left;
+  }
+  
+  .large-100{
+    width: 100%;
+  }
+  
+  .columns{
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    box-sizing: border-box;
+  }
+  
+  .float-right{
+    float: right;
+  }
+  
+  .large-centered{
+    float: none;
+    clear: both;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .padding{
+    padding: 15rem 0;
+    box-sizing: border-box;
+  }
+  
+  .padding2{
+    padding: 6.25rem 0;
+    box-sizing: border-box;
+  }
+  
+  .padding3{
+    padding: 1rem 0;
+    box-sizing: border-box;
+  }
+  
+  #recipes.padding{
+    padding: 15rem 0 0 0;
+  }
+  

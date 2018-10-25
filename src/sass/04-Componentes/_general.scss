@@ -1,0 +1,20 @@
+html, body{
+    position: relative;
+    display: block;
+    background: #fefdec;
+    font-family: "Gill Sans", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #333333;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  
+  p, .product, footer a, footer p, footer li, .product-detail li, .form input, .form textarea, .social a, .dropdown li a {
+    font-family: "BasisGrotesque", "Helvetica", "Arial", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0;
+    font-size: 1.125rem;
+  }

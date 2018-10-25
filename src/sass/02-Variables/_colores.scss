@@ -1,0 +1,48 @@
+// Colores
+$verde: #66ad43;
+$yellow: #f3b500;
+$green: #093d0d;
+$blue: #2a75ff;
+$red: #f94a11;
+$white: #fefdec;
+$burgundy: #691736;
+$lightblue: #deefe0;
+$gray: #333;
+
+$white-d: #f0efde;
+$dark-gray: #666;
+$beige: #efeed9; //Footer
+$blanco: #fff;
+
+
+.yellow{
+    color: $yellow;
+  }
+  
+  .green{
+    color: $green;
+  }
+
+  .blue{
+    background: $blue;
+  }
+  
+  .red{
+    color: $red;
+  }
+  
+  .white, .text-white{
+    color: $white;
+  }
+  
+  .burgundy{
+    background: $burgundy;
+  }
+  
+  .lightblue{
+    background: $lightblue;
+  }
+  
+  .gray{
+    color: $gray;
+  }
