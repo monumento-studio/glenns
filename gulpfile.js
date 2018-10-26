@@ -9,6 +9,7 @@ var imagemin = require('gulp-imagemin');
 var autoprefixer = require('gulp-autoprefixer');
 var cache = require('gulp-cache');
 var concat = require('gulp-concat');
+var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
 
 
@@ -54,7 +55,7 @@ gulp.task('cache:clear', function (callback) {
 
 gulp.task('css', function(){
     return gulp.src('src/sass/**/*.+(scss|sass)')
-        .pipe(sass())
+        .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(cssnano())
         .pipe(autoprefixer({
@@ -62,6 +63,7 @@ gulp.task('css', function(){
             cascade: false
         }))
         .pipe(concat('app.css'))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.stream());
 });

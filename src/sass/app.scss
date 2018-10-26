@@ -23,12 +23,19 @@
 @import '04-Componentes/grid';
 @import '04-Componentes/headings';
 
+@import '04-Componentes/forms';
+
+@import '04-Componentes/componentes';
+
 
 /* Partials */
 
 @import '05-Parciales/menu';
+@import '05-Parciales/footer';
 
 /* Páginas */      
 
 
 @import '06-Paginas/modulos';
+@import '06-Paginas/shop';
+@import '06-Paginas/contact';

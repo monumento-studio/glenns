@@ -24,19 +24,9 @@ a{
     box-sizing: border-box;
     color: #fefdec;
     z-index: 1;
-    -webkit-text-shadow: 1px 1px 2px rgba(0,0,0,.25);
-    -moz-text-shadow: 1px 1px 2px rgba(0,0,0,.25);
-    -o-text-shadow: 1px 1px 2px rgba(0,0,0,.25);
     text-shadow: 1px 1px 2px rgba(0,0,0,.25);
     border-radius: 1rem;
-    -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,.25);
-    -moz-box-shadow: 2px 2px 2px rgba(0,0,0,.25);
-    -o-box-shadow: 2px 2px 2px rgba(0,0,0,.25);
     box-shadow: 2px 2px 2px rgba(0,0,0,.25);
-  
-    -webkit-transition: all .15s .15s ease-in-out;
-    -moz-transition: all .15s .15s ease-in-out;
-    -o-transition: all .15s .15s ease-in-out;
     transition: all .15s .15s ease-in-out;
   }
   
@@ -73,47 +63,35 @@ a{
   }
   
   .button.red::before {
-      transition: -webkit-transform .25s 0s;
       transition: transform .25s 0s;
-      transition: transform .25s 0s,-webkit-transform .25s 0s;
       background: #f3b500;
       border-radius: 50%;
       transform: translate3d(-50%,-50%,0) scale(0);
   }
   
   .button.green::before {
-      transition: -webkit-transform .25s 0s;
       transition: transform .25s 0s;
-      transition: transform .25s 0s,-webkit-transform .25s 0s;
       background: #691736;
       border-radius: 50%;
       transform: translate3d(-50%,-50%,0) scale(0);
   }
   
   .button.blue::before {
-      transition: -webkit-transform .25s 0s;
       transition: transform .25s 0s;
-      transition: transform .25s 0s,-webkit-transform .25s 0s;
       background: #fefdec;
       border-radius: 50%;
       transform: translate3d(-50%,-50%,0) scale(0);
   }
   
   .button.white::before {
-      transition: -webkit-transform .25s 0s;
       transition: transform .25s 0s;
-      transition: transform .25s 0s,-webkit-transform .25s 0s;
       background: #f3b500;
       border-radius: 50%;
       transform: translate3d(-50%,-50%,0) scale(0);
   }
   
   .button:hover::before {
-      -webkit-transition: -webkit-transform .5s .15s;
-      transition: -webkit-transform .5s .15s;
       transition: transform .5s .15s;
-      transition: transform .5s .15s,-webkit-transform .5s .15s;
-      -webkit-transform: translate3d(-50%,-50%,0) scale(1);
       transform: translate3d(-50%,-50%,0) scale(1);
   }
   
@@ -124,3 +102,23 @@ a{
   .button.white:hover{
     color: #fefdec;
   }
+
+  /* Tablet */
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+
+  a{
+    font-size: 1.75vw;
+  }
+}
+
+/* Smartphone */
+@media screen and (max-width: 39.9375em){
+
+  a.button, button.button{
+    text-align: center;
+    font-size: 4vw;
+    padding: 1.5rem 0;
+    width: 100%;
+  }
+
+}

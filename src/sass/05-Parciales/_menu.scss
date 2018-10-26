@@ -17,9 +17,6 @@
     position: absolute;
     top: 0;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 12vw;
     margin: 0 auto;
@@ -61,3 +58,82 @@
     background: $yellow;
   }
   
+
+
+
+/* Tablet */
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+  .navigation ul li {
+    margin: 0 .25rem;
+  }
+
+  .navigation {
+    padding: 0 1rem;
+  }
+
+  .navigation a.logo{
+    width: 10rem;
+  }
+}
+/* End Tablet */
+
+  /* Smartphone */
+  @media screen and (max-width: 39.9375em){
+    .navigation{
+      background: $white;
+      position: fixed;
+      top: 0;
+      height: 5rem;
+      padding: 0 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,.1);
+      z-index: 999;
+    }
+    
+    .navigation, .navigation nav{
+      display: -webkit-flex;
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .navigation a.logo{
+      width: 7rem;
+      position: relative;
+      transform: none;
+      left: 0;
+    }
+    
+    .navigation ul li{
+      display: block;
+      margin: 1rem 0;
+    }
+    
+    .navigation ul li.cta {
+      margin-bottom: 0;
+    }
+    
+    .navigation li.cta a {
+      padding: .75rem 0;
+      margin-top: .25rem;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    
+    .navigation .left{
+      display: none;
+      background: $white;
+      position: absolute;
+      width: 100%;
+      float: none;
+      left: 0;
+      top: 5rem;
+      padding: 1rem 0 0 0;
+    }
+    
+    .navigation a{
+      padding: 0;
+      font-size: 3vw;
+    }
+  }
