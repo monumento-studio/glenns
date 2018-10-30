@@ -1,0 +1,139 @@
+.navigation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 3rem;
+    box-sizing: border-box;
+    z-index: 2;
+  }
+  
+  .navigation a{
+    padding: 1.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .navigation a.logo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12vw;
+    margin: 0 auto;
+  }
+  
+  .navigation .left{
+    float: left;
+    width: 50%;
+  }
+  
+  .navigation .right{
+    float: right;
+    width: 50%;
+    text-align: right;
+  }
+  
+  .navigation ul li{
+    display: inline-block;
+    margin: 0 2rem;
+  }
+  
+  .navigation ul li.show-for-small{
+    display: none;
+  }
+  
+  .navigation a:hover{
+    color: $red;
+  }
+  
+  .navigation li.cta a{
+    background: $red;
+    color: $white;
+    padding: 1.5rem 3rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  
+  .navigation li.cta a:hover{
+    background: $yellow;
+  }
+  
+
+
+
+/* Tablet */
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+  .navigation ul li {
+    margin: 0 .25rem;
+  }
+
+  .navigation {
+    padding: 0 1rem;
+  }
+
+  .navigation a.logo{
+    width: 10rem;
+  }
+}
+/* End Tablet */
+
+  /* Smartphone */
+  @media screen and (max-width: 39.9375em){
+    .navigation{
+      background: $white;
+      position: fixed;
+      top: 0;
+      height: 5rem;
+      padding: 0 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,.1);
+      z-index: 999;
+    }
+    
+    .navigation, .navigation nav{
+      display: -webkit-flex;
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .navigation a.logo{
+      width: 7rem;
+      position: relative;
+      transform: none;
+      left: 0;
+    }
+    
+    .navigation ul li{
+      display: block;
+      margin: 1rem 0;
+    }
+    
+    .navigation ul li.cta {
+      margin-bottom: 0;
+    }
+    
+    .navigation li.cta a {
+      padding: .75rem 0;
+      margin-top: .25rem;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    
+    .navigation .left{
+      display: none;
+      background: $white;
+      position: absolute;
+      width: 100%;
+      float: none;
+      left: 0;
+      top: 5rem;
+      padding: 1rem 0 0 0;
+    }
+    
+    .navigation a{
+      padding: 0;
+      font-size: 3vw;
+    }
+  }

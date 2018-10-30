@@ -1,0 +1,23 @@
+#shop .row.flex{
+    justify-content: flex-start;
+  }
+  
+  #shop a.product {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  #shop a.product img{
+    margin-bottom: 2rem;
+  }
+
+  /* Smartphone */
+@media screen and (max-width: 39.9375em){
+  #shop.padding{
+    padding: 12rem 0;
+  }
+  #shop a.product {
+    width: 70%;
+    margin: 2rem auto;
+  }
+}

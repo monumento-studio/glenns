@@ -1,0 +1,457 @@
+.modulo p{
+    margin: 3.125rem auto;
+    padding: 0 5rem;
+  }
+  
+  .row.intro-prods{
+    max-width: none;
+  }
+  
+  .intro-prods a{
+    float: left;
+    width: 33.33%;
+    /* font-size: .9375rem; */
+  }
+  
+  .product img{
+    margin-bottom: 1rem;
+    transition: transform .25s ease-in-out;
+  }
+  
+  .product:hover img{
+    transform: scale(1.125);
+  }
+  
+  .product span{
+    text-transform: none;
+    opacity: 0;
+  }
+  
+  .product span b, footer li, footer p span{
+    font-weight: bold;
+  }
+  
+  .product:hover span, footer a:hover{
+    opacity: 1;
+  }
+  
+  #introShop h2{
+    z-index: 0;
+  }
+  
+  .recipes{
+    transform: translateY(-1rem);
+  }
+  
+  .no-t .recipes{
+    transform: translateY(0);
+    margin-top: 3.125rem;
+  }
+  
+  .recipes a, .social a, .dropdown li a {
+    position: relative;
+    text-transform: none;
+    overflow: hidden;
+  }
+  
+  .dropdown li a:hover{
+    text-decoration: underline;
+  }
+  
+  #recipes .recipes a{
+    margin-bottom: 6.25rem;
+  }
+  
+  .recipes a img, .location h6{
+    margin-bottom: 1rem;
+  }
+  
+  .recipes a span{
+    font-size: 1.25rem;
+  }
+  
+  .recipes a::after{
+    content: 'Read More';
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "BasisGrotesque";
+    font-style: normal;
+    font-weight: 200;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background: $verde;
+    color: white;
+    top: -100%;
+    left: 0;
+  
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+  }
+  
+  .recipes a:hover::after{
+    top: 0;
+  }
+  
+  .categories{
+    margin-left: 5vw;
+    position: absolute;
+    z-index: 990;
+  }
+  
+  .categories button.button{
+    width: auto;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .categories ul.dropdown{
+    display: none;
+    margin: 0;
+    background: $beige;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    width: fit-content;
+    transform: translateY(-1.5rem);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  
+  .dropdown li{
+    margin-bottom: 1rem;
+  }
+  
+  .dropdown li:last-child{
+    margin-bottom: 0;
+  }
+  
+  .categories ul.dropdown.d-show{
+    display: block;
+    width: -webkit-fill-available;
+  }
+  
+  .categories button.button span{
+    display: inline-block;
+    margin-left: 2rem;
+  }
+  
+  .cross {
+    background: $blanco;
+    height: 12px;
+    position: relative;
+    width: 2px;
+    top: 0;
+    left: 5px;
+    transform: rotate(225deg);
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 350ms;
+    transition-duration: 350ms;
+  }
+  
+  .cross:after {
+    background: $blanco;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 12px;
+    transform: rotate(0);
+  }
+  
+  .wholesale.padding{
+    position: relative;
+    padding: 7.5rem 0;
+  }
+  
+  .wholesale h5{
+    margin-bottom: 3.125rem;
+  }
+  
+  .product-detail h3 {
+    color: $verde;
+    margin-bottom: 2rem;
+    text-align: left;
+    line-height: 1;
+    font-size: 2.5vw;
+    padding-right: 10rem;
+  }
+  
+  .product-detail h3 span{
+    display: block;
+    font-size: 1.25rem;
+    margin-top: .5rem;
+  }
+  
+  .product-detail .large-50 > div{
+    padding: 2rem 0;
+  }
+  
+  .product-detail p span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: .5rem;
+  }
+  
+  .certifications img{
+    display: inline-block;
+    margin: .5rem 1rem;
+  }
+  
+  .care ul li{
+    font-family: "BasisGrotesque";
+    font-weight: 200;
+    font-style: normal;
+    list-style-type: disc;
+    margin: 1rem 0;
+  }
+  
+  .nut-facts img, .prod-img img{
+    max-width: 70%;
+    margin-top: 2rem;
+  }
+  
+  .certifications img{
+    max-height: 5rem;
+  }
+  
+  .prod-recipe{
+    background: $white-d;
+  }
+  
+  .prod-recipe h3{
+    line-height: 1;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .p-form{
+    margin: 4rem 0 0 0;
+  }
+  
+  .p-form select, .p-form label{
+    display: inline-block;
+    color: $gray;
+    font-family: "BasisGrotesque";
+    font-style: normal;
+    text-shadow: none;
+    font-size: 1.125rem;
+  }
+  
+  .p-form label{
+    width: 20%;
+  }
+  
+  .p-form select{
+    width: 80%;
+    background: $white-d;
+  }
+  
+  .prod-img img{
+    margin-bottom: 5rem;
+  }
+  
+  .screen{
+    position: absolute;
+    background: rgba(0,0,0,.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .recipe .title p{
+    font-family: "Gill Sans";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9375rem;
+  }
+  
+  .recipe ul{
+    list-style-type: disc;
+    font-family: "BasisGrotesque";
+    font-style: normal;
+    font-weight: 200;
+  }
+  
+  .recipe ul li{
+    margin: 0.5rem 0;
+  }
+  
+  .instructions ul{
+    list-style-type: decimal;
+  }
+  
+  .share{
+    margin-bottom: 6.25rem;
+  }
+  
+  .share a{
+    display: inline-block;
+    width: 1.75rem;
+    margin-right: 0.5rem;
+  }
+  
+  .mapa iframe{
+    display: block;
+    width: 100vw;
+    height: 80vh;
+    filter: sepia(20%);
+  }
+
+    /* Tablet */
+    @media screen and (min-width: 40em) and (max-width: 63.9375em){
+      .product span{
+        opacity: 1;
+      }
+    
+      #introShop .modulo, .prod-info {
+        padding: 0 5vw;
+      }
+    
+      .intro-prods, .recipes a{
+        margin-bottom: 1rem;
+      }
+    
+      #recipes .recipes a{
+        margin-bottom: 3.125rem;
+      }
+    
+      #recipes .recipes a span, .navigation a{
+        font-size: .9375rem;
+      }
+    
+      .modulo .recipes{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        box-sizing: border-box;
+      }
+
+      .nut-facts img, .prod-img img {
+        max-width: 50%;
+        margin-top: 0;
+      }
+    
+      .p-form select {
+        width: 65%;
+      }
+    
+      .p-form label {
+        width: 35%;
+      }
+    
+      .prod-recipe .recipes{
+        flex-direction: row;
+        padding: 0 2rem;
+        box-sizing: border-box;
+      }
+
+      .recipes a span {
+        font-size: 1rem;
+      }
+    
+    }
+
+    /* End Tablet */
+
+/* Smartphone */
+@media screen and (max-width: 39.9375em){
+  .left a{
+    font-size: 6vw;
+    text-align: center;
+    padding: 0;
+  }
+
+  .modulo p{
+    margin: 2rem auto;
+    padding: 0;
+  }
+
+  .product span{
+    opacity: 1;
+    font-size: .75rem;
+    line-height: .5;
+  }
+
+  .show-for-small, .navigation ul li.show-for-small, .navigation .left.show{
+    display: block;
+  }
+
+  .hide-for-small{
+    display: none;
+  }
+
+  .intro-prods, #shop a.product img, .intro-prods, .recipes a{
+    margin-bottom: 1rem;
+  }
+
+  .recipes{
+    flex-direction: column;
+  }
+
+  .recipes a{
+    font-size: 3vw;
+    width: 75%;
+    margin: 0 auto 1rem auto;
+  }
+
+  .recipes a span, #shop .product span {
+    font-size: 1rem;
+  }
+
+  #recipes .recipes a{
+    width: 100%;
+    margin: 3.125rem auto;
+  }
+
+  .prod-recipe .recipes a{
+    font-size: 4vw;
+    margin-bottom: 2rem;
+  }
+  .nut-facts img, .prod-img img {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .wholesale h5{
+    margin-bottom: 2rem;
+    line-height: 1.1;
+  }
+
+  #recipes .recipes {
+    -webkit-transform: translateY(-4rem);
+    -moz-transform: translateY(-4rem);
+    -o-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+  }
+
+  .recipe-desc h6, .no-t h5{
+    font-size: 7vw;
+  }
+
+  .share a, .social{
+    margin-top: 1rem;
+  }
+
+  .product-detail h3 {
+    margin-bottom: 1rem;
+    line-height: 1.15;
+    font-size: 7.5vw;
+    padding-right: 0;
+  }
+
+  .categories {
+    position: fixed;
+    bottom: 1rem;
+    width: calc(100% - 10vw);
+  }
+
+}
+

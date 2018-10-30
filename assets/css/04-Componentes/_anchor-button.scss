@@ -1,0 +1,124 @@
+a{
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  a.button:focus, form select:focus, button.button:focus{
+    outline: 0;
+  }
+  
+  button, [type="button"], [type="reset"], [type="submit"], select{
+    -webkit-appearance: none;
+    border: none;
+  }
+  
+  a.button, form select, button.button{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    color: #fefdec;
+    z-index: 1;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+    transition: all .15s .15s ease-in-out;
+  }
+  
+  a.button.small, button.button{
+    font-size: 1.25rem;
+    width: 100%;
+  }
+  
+  a.button.red, button.button.red{
+    background: #e50000;
+  }
+  
+  a.button.green, button.button.green{
+    background: $verde;
+  }
+  
+  a.button.white, button.button.white{
+    background: #fefdec;
+    color: #333;
+  }
+  
+  a.button.blue, button.button.blue{
+    background: #003259;
+  }
+  
+  .button:before, .button:after {
+    content: '';
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+  }
+  
+  .button.red::before {
+      transition: transform .25s 0s;
+      background: #f3b500;
+      border-radius: 50%;
+      transform: translate3d(-50%,-50%,0) scale(0);
+  }
+  
+  .button.green::before {
+      transition: transform .25s 0s;
+      background: #691736;
+      border-radius: 50%;
+      transform: translate3d(-50%,-50%,0) scale(0);
+  }
+  
+  .button.blue::before {
+      transition: transform .25s 0s;
+      background: #fefdec;
+      border-radius: 50%;
+      transform: translate3d(-50%,-50%,0) scale(0);
+  }
+  
+  .button.white::before {
+      transition: transform .25s 0s;
+      background: #f3b500;
+      border-radius: 50%;
+      transform: translate3d(-50%,-50%,0) scale(0);
+  }
+  
+  .button:hover::before {
+      transition: transform .5s .15s;
+      transform: translate3d(-50%,-50%,0) scale(1);
+  }
+  
+  .button.blue:hover{
+    color: #333;
+  }
+  
+  .button.white:hover{
+    color: #fefdec;
+  }
+
+  /* Tablet */
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+
+  a{
+    font-size: 1.75vw;
+  }
+}
+
+/* Smartphone */
+@media screen and (max-width: 39.9375em){
+
+  a.button, button.button{
+    text-align: center;
+    font-size: 4vw;
+    padding: 1.5rem 0;
+    width: 100%;
+  }
+
+}
