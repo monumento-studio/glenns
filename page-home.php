@@ -34,6 +34,7 @@ get_header();
       </div>
     </section>
 
+
     <section id="introShop" class="fullheight">
       <div class="modulo flex flex-column">
         <div class="row">
