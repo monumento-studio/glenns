@@ -4,15 +4,48 @@
 
 get_header();
 
+$imagen_de_fondo_1_hero = get_field('imagen_de_fondo_1_hero');
+$imagen_de_fondo_2_hero = get_field('imagen_de_fondo_2_hero');
+$imagen_de_fondo_movil_hero = get_field('imagen_de_fondo_movil_hero');
+$frase_inicial_hero = get_field('frase_inicial_hero');
+
+$imagen_de_fondo_1_us = get_field('imagen_de_fondo_1_us');
+$imagen_de_fondo_2_us = get_field('imagen_de_fondo_2_us');
+$imagen_movil_us = get_field('imagen_movil_us');
+$frase_inicial_us = get_field('frase_inicial_us');
+$texto_us = get_field('texto_us');
+$texto_en_boton_us = get_field('texto_en_boton_us');
+$link_a_pagina_us = get_field('link_a_pagina_us');
+
+$titulo_de_la_seccion_shop = get_field('titulo_de_la_seccion_shop');
+$texto_en_boton_shop = get_field('texto_en_boton_shop');
+$link_a_shop = get_field('link_a_shop');
+
+$imagen_de_fondo_1_business = get_field('imagen_de_fondo_1_business');
+$imagen_de_fondo_2_business = get_field('imagen_de_fondo_2_business');
+$frase_inicial_business = get_field('frase_inicial_business');
+$texto_business = get_field('texto_business');
+$texto_en_boton_business = get_field('texto_en_boton_business');
+$link_a_pagina_business = get_field('link_a_pagina_business');
+
+$titulo_recetas = get_field('titulo_recetas');
+
+$imagen_de_fondo_contacto = get_field('imagen_de_fondo_contacto');
+$titulo_contacto = get_field('titulo_contacto');
+$texto_contacto = get_field('texto_contacto');
+$texto_en_boton = get_field('texto_en_boton');
+$link_a_pagina = get_field('link_a_pagina');
+
+
 ?>
 
     <section id="main" class="fullheight slide-up-fade-in">
-      <div class="modulo parallax flex" data-parallax-speed="1" style="background-image:url('images/01-bg01.png');background-position:center;background-size:cover;background-repeat:no-repeat;">
-        <div class="hide-for-small hide-for-medium modulo-inner parallax" data-parallax-speed="2" style="background-image:url('images/01-bg02.png');background-position:center;background-size:cover;background-repeat:no-repeat;"></div>
-        <div class="show-for-small show-for-medium modulo-inner" style="background-image:url('images/atf-mobile.png');background-position:center;background-size:cover;background-repeat:no-repeat;"></div>
+      <div class="modulo parallax flex" data-parallax-speed="1" style="background-image:url('<?php echo $imagen_de_fondo_1_hero; ?>');background-position:center;background-size:cover;background-repeat:no-repeat;">
+        <div class="hide-for-small hide-for-medium modulo-inner parallax" data-parallax-speed="2" style="background-image:url('<?php echo $imagen_de_fondo_2_hero; ?>');background-position:center;background-size:cover;background-repeat:no-repeat;"></div>
+        <div class="show-for-small show-for-medium modulo-inner" style="background-image:url('<?php echo $imagen_de_fondo_movil_hero; ?>');background-position:center;background-size:cover;background-repeat:no-repeat;"></div>
         <div class="row">
           <div class="large-75 large-centered small-100 columns">
-            <h1 data-parallax-speed="2">You'll<br>want this<br>heat</h1>
+            <h1 data-parallax-speed="2"><?php echo $frase_inicial_hero; ?></h1>
           </div>
         </div>
       </div>
